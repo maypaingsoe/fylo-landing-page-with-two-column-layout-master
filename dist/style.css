@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?familyz=Open+Sans&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+#main-header,
+.nav .nav-items,
+.call-to-action-btn {
+  font-family: "Raleway", sans-serif;
+}
+
+section h1 {
+  font-weight: 600;
+  color: #023047;
+}
+
+section h2 {
+  font-weight: 600;
+}
+
+p,
+div input {
+  padding-top: 25px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/*main-header*/
+#main-header {
+  padding: 6rem;
+}
+#main-header li {
+  font-size: 18px;
+}
+#main-header li a {
+  text-decoration: hidden;
+  color: #023047;
+}
+#main-header li a:hover {
+  color: #3c9f8f;
+}
+
+/*feature*/
+#features-grid {
+  margin-top: 3rem;
+  padding: 6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+#features-grid .features-img img {
+  width: 550px;
+}
+
+/*team*/
+#team-grid {
+  margin-top: 3rem;
+  padding: 6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+#team-grid .team-img img {
+  width: 550px;
+}
+
+.team-content a:link {
+  color: #3c9f8f;
+}
+
+/*sign-in*/
+#sign-in-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 150px;
+  background-color: #585989;
+  color: white;
+  padding: 6rem;
+}
+
+/*form*/
+.call-to-action-btn {
+  background-color: #3065f8;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 400;
+  width: 50%;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+input {
+  width: 50%;
+}
+
+/*card*/
+.card {
+  margin-top: 1rem;
+  box-shadow: 2px 2px 7px 1px rgba(28, 110, 164, 0.15);
+  width: 60%;
+  padding: 1rem;
+  font-weight: 300;
+}
+.card .card-body .avatar-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: block;
+  float: left;
+}
+
+/*footer*/
+#footer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: #070439;
+  color: white;
+  padding: 6rem;
+  line-height: 2;
+}
+#footer-grid li {
+  overflow: hidden;
+}
+#footer-grid li a {
+  text-decoration: none;
+  color: white;
+}
+#footer-grid li a:hover {
+  color: #3c9f8f;
+}
+
+.footer-logo img {
+  filter: brightness(0) invert(1);
+}
+
+/*social links*/
+#social-links li {
+  filter: brightness(0) invert(1);
+  display: block;
+  float: left;
+  margin: 10px;
+}
+
+#social-links img {
+  width: 30px;
+}
+
+/*footer*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+/*responsivee view*/
+@media screen and (max-width: 1024px) {
+  #features-grid,
+#team-grid,
+#sign-in-grid {
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section h1,
+section h2 {
+    text-align: center;
+  }
+
+  .features-img,
+.team-img {
+    margin: 6rem;
+  }
+
+  #features-grid .features-img img {
+    width: 600px;
+    position: absolute;
+    top: 260px;
+  }
+
+  #features-grid .features-content {
+    margin-top: 380px;
+  }
+
+  #team-grid .team-img img {
+    width: 600px;
+    position: absolute;
+    top: 1190px;
+  }
+
+  #team-grid .team-content {
+    margin-top: 270px;
+  }
+
+  .card .card-body {
+    width: 100%;
+    padding: 2rem;
+    font-weight: 300;
+  }
+
+  .card-body .avatar-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: block;
+    float: left;
+  }
+
+  form {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  #main-header {
+    padding: 1rem;
+  }
+
+  #main-header .logo img {
+    width: 6rem;
+  }
+
+  #main-header li {
+    font-size: 14px;
+  }
+
+  #features-grid,
+#team-grid,
+#sign-in-grid {
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .features-img,
+.team-img {
+    margin: 0rem;
+  }
+
+  #features-grid .features-img img {
+    width: 325px;
+    position: absolute;
+    top: 160px;
+  }
+
+  #features-grid .features-content {
+    margin-top: 280px;
+  }
+
+  section h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  #features-grid p,
+#sign-in p {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  #features-grid form,
+#sign-in form,
+button {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  #features-grid input {
+    margin-botton: 2rem;
+  }
+
+  #team-grid {
+    background-image: url(http://127.0.0.1:5500/images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #team-grid .team-img img {
+    width: 325px;
+    position: absolute;
+    top: 900px;
+  }
+
+  #team-grid .team-content {
+    margin-top: 320px;
+    text-align: center;
+  }
+
+  #team-grid .team-content a {
+    line-height: 5;
+    font-size: 18px;
+  }
+
+  #team-grid .card {
+    width: 100%;
+    line-height: 2;
+    padding: 0.5rem;
+  }
+
+  #sign-in-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem;
+  }
+
+  #sign-in-grid h2 {
+    text-align: center;
+  }
+
+  .call-to-action-btn {
+    width: 100%;
+  }
+
+  #footer-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+  }
+
+  #footer-grid div {
+    margin-top: 30px;
+  }
+
+  #footer-grid .footer-logo img {
+    width: 225px;
+    padding: 2rem;
+  }
+
+  #social-links li {
+    display: block;
+    margin: 30px;
+  }
+}
